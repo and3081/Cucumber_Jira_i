@@ -31,5 +31,9 @@ public class TaskListSteps extends TaskListElems {
     @Step("Проверка head деталей задачи")
     public static void assertHeadTaskDetail() {
         goalTaskDetail.shouldBe(exist, visible);
+        stepDetail(getGoalTaskStatus(), getGoalTaskVersion());
     }
+
+    @Step("Статус задачи '{status}', версия задачи '{version}'")
+    public static void stepDetail(String status, String version) {}
 }

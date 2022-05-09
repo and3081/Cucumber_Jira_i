@@ -49,10 +49,10 @@ public class TasksSteps extends TasksElems {
         headMyTask.shouldBe(exist, visible, exactText(taskName));
     }
 
-    @Step("Проверка статуса моей задачи: {stat}")
-    public static void assertMyTaskStatus(String stat) {
+    @Step("Проверка статуса моей задачи: {status}")
+    public static void assertMyTaskStatus(String status) {
         checkEndRefresh();
-        Assertions.assertEquals(stat, getStatusMyTask(), "Статус не равен " + stat);
+        Assertions.assertEquals(status, getStatusMyTask(), "Статус не равен " + status);
     }
 
     @Step("Нажатие кнопки В работе")

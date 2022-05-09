@@ -25,11 +25,11 @@ public class TaskListElems extends BaseElems {
 
     @Step("Запрос статуса задачи")
     public static String getGoalTaskStatus() {
-        return goalTaskStatus.text().trim();
+        return goalTaskStatus.shouldBe(visible).text().trim();
     }
 
     @Step("Запрос версии задачи")
     public static String getGoalTaskVersion() {
-        return goalTaskVersion.text().trim();
+        return goalTaskVersion.shouldBe(visible).text().trim();
     }
 }
