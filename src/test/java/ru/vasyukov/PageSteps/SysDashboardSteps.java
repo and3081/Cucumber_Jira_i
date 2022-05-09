@@ -6,11 +6,10 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Condition.*;
 
 public class SysDashboardSteps extends SysDashboardElems {
-    public static void enteringProject(String projectFullName, String projectName) {
+    public static void enteringProject(String projectFullName) {
         clickProjectsButton();
         clickItemTest(projectFullName);
         clickSideBarTasksButton();
-        assertLinkProjects(projectName);
     }
 
     @Step("Нажатие dropdown Проекты")

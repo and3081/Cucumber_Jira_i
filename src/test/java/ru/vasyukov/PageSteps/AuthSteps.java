@@ -12,7 +12,6 @@ public class AuthSteps extends AuthElems {
         inputAuthLogin();
         inputAuthPsw();
         clickAuthButton();
-        assertButtonProjects();
     }
 
     @Step("Проверка head блока логина страницы авторизации")
