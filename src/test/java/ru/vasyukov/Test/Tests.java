@@ -6,13 +6,6 @@ import ru.vasyukov.PageSteps.*;
 import static ru.vasyukov.PageObject.BaseElems.clickSideBarTaskListButton;
 
 public class Tests {
-//    public void TestCountInProject(String projectFullName, String projectName) {
-//        AuthSteps.auth();
-//        SysDashboardSteps.enteringProject(projectFullName, projectName);
-//        clickSideBarTaskListButton();
-//        TaskListSteps.assertTaskCount();
-//        System.out.println("Количество задач: " + TaskListSteps.getTaskCount());
-//    }
 //
 //    public void TestTaskInProject(String projectFullName, String taskName) {
 //        AuthSteps.auth();

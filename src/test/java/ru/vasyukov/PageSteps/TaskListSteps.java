@@ -10,7 +10,11 @@ public class TaskListSteps extends TaskListElems {
     @Step("Проверка наличия количества задач")
     public static void assertTaskCount() {
         problemCount.shouldBe(exist, visible);
+        stepCount(getTaskCount());
     }
+
+    @Step("Количество задач '{count}'")
+    public static void stepCount(int count) {}
 
     @Step("Поиск задачи {name}")
     public static void searchTask(String name) {
