@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Begin_Selenide_i</artifactId>
+    <artifactId>Cucumber_Jira_i</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -154,6 +154,7 @@
                     <perCoreThreadCount>${parallelCount}</perCoreThreadCount>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                        -Dcucumber.plugin="io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm"
                         <!--                        нужно указать кодировку иначе в терминале не будет кирилицы у фич кукумбера-->
                         -Dfile.encoding=UTF-8
                     </argLine>
