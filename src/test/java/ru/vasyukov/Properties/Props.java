@@ -31,6 +31,9 @@ public interface Props extends Config {
     @Key("listener.type")
     String listenerType();
 
+    @Key("listener.around")
+    String listenerAround();
+
     @Key("listener.mode.elements")
     String listenerModeElements();
 
