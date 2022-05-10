@@ -51,7 +51,7 @@ public class WebHooks {
      * Открытие базового url перед каждым тестом
      */
     @Before
-    public void setDriverPropsAndOpen() {
+    public void openBrowser() {
         open(TestData.props.baseUrlJira());
         getWebDriver().manage().window().maximize();
     }
