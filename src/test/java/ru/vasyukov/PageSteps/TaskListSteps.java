@@ -1,6 +1,6 @@
 package ru.vasyukov.PageSteps;
 
-import ru.vasyukov.PageObject.TaskListElems;
+import ru.vasyukov.PageObjects.TaskListElems;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.CollectionCondition.size;

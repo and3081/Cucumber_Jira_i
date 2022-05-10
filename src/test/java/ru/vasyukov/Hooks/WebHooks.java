@@ -5,9 +5,9 @@ import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import ru.vasyukov.Properties.TestData;
+import ru.vasyukov.Custom.Properties.TestData;
 import com.codeborne.selenide.Configuration;
-import ru.vasyukov.Utils.Listeners;
+import ru.vasyukov.Custom.Listeners;
 import org.openqa.selenium.support.events.WebDriverListener;
 
 import static com.codeborne.selenide.Selenide.open;

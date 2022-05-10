@@ -1,10 +1,10 @@
-package ru.vasyukov.Utils;
+package ru.vasyukov.Custom;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.events.WebDriverListener;
-import ru.vasyukov.Properties.TestData;
+import ru.vasyukov.Custom.Properties.TestData;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
@@ -46,7 +46,7 @@ public class Listeners implements WebDriverListener {
 
     /**
      * Геттер одного из вариантов Вокруг в зависимости от настройки проперти
-     * @return 1 перед действием, 2 вокруг, 3 после действия
+     * @return 1 перед действием, 2 вокруг, 3 после действия (+click перед)
      */
     private static int getListenerAround() {
         switch (listenerAround) {
@@ -131,7 +131,8 @@ public class Listeners implements WebDriverListener {
      * @param args   аргументы метода назначения
      */
     private static void actionBeforeWebElement(WebDriver lastListenedDriver, WebElement el, Method method, Object[] args) {
-        if (getListenerAround()<=2) {
+        // метод click- всегда, т.к.полсе его м.не быть из-за смены страницы
+        if (getListenerAround()<=2 || method.getName().equals("click")) {
             // в таком порядке ! чтобы в режиме both наведение тут не крашило наведение в тестах
             if (lastListenedDriver != null && getListenerModeElements() != 2) {
                 new Actions(lastListenedDriver).moveToElement(el).perform();

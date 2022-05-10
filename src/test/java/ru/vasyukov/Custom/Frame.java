@@ -1,4 +1,4 @@
-package ru.vasyukov.Utils;
+package ru.vasyukov.Custom;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.switchTo;
 public class Frame {
     public static void inputToBodyFrame(SelenideElement elemIframe, String text) {
         selectInFrame(elemIframe);
-        $x("//body").shouldBe(exist, visible, enabled).setValue(text);
+        $x("//body").shouldBe(visible, enabled).setValue(text);
         selectOutFrame();
     }
 
@@ -22,7 +22,7 @@ public class Frame {
 
 //    public static void inputToBodyFrame(int index, String text) {
 //        selectInFrame(index);
-//        $x("//body").shouldBe(exist, visible, enabled).setValue(text);
+//        $x("//body").shouldBe(visible, enabled).setValue(text);
 //        selectOutFrame();
 //    }
 //

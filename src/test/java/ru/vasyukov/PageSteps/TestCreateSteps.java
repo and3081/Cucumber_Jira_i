@@ -1,9 +1,9 @@
 package ru.vasyukov.PageSteps;
 
 import io.qameta.allure.Step;
-import ru.vasyukov.PageObject.TestCreateElem;
-import ru.vasyukov.Utils.Acts;
-import ru.vasyukov.Utils.Frame;
+import ru.vasyukov.PageObjects.TestCreateElem;
+import ru.vasyukov.Custom.Acts;
+import ru.vasyukov.Custom.Frame;
 
 import static com.codeborne.selenide.Condition.*;
 

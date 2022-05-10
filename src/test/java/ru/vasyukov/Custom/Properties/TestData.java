@@ -1,4 +1,4 @@
-package ru.vasyukov.Properties;
+package ru.vasyukov.Custom.Properties;
 
 import org.aeonbits.owner.ConfigFactory;
 

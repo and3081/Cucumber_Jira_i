@@ -1,11 +1,11 @@
-package ru.vasyukov.StepsDefinition;
+package ru.vasyukov.StepDefinitions;
 
 import io.cucumber.java.ru.*;
 import ru.vasyukov.PageSteps.*;
 
 import java.util.List;
 
-import static ru.vasyukov.PageObject.BaseElems.clickSideBarTaskListButton;
+import static ru.vasyukov.PageObjects.BaseElems.clickSideBarTaskListButton;
 
 public class JiraSteps {
     @Когда("^Авторизуемся")
@@ -55,7 +55,7 @@ public class JiraSteps {
     @Тогда("^Появляется созданная задача")
     public void checkCreatedTask(List<String> fields) { TasksSteps.assertTaskCreated(fields.get(0)); }
 
-    @И("^Проверяем статус задачи")
+    @И("^Запрашиваем текущий статус задачи")
     public void checkTaskStatus(List<String> status) { TasksSteps.assertMyTaskStatus(status.get(0)); }
 
     @Затем("^Изменяем статус задаче В РАБОТЕ")

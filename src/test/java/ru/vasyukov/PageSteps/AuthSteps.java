@@ -1,7 +1,7 @@
 package ru.vasyukov.PageSteps;
 
-import ru.vasyukov.PageObject.AuthElems;
-import ru.vasyukov.Properties.TestData;
+import ru.vasyukov.PageObjects.AuthElems;
+import ru.vasyukov.Custom.Properties.TestData;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.*;
