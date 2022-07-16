@@ -1,6 +1,6 @@
-package ru.vasyukov.PageSteps;
+package ru.vasyukov.pageSteps;
 
-import ru.vasyukov.PageObjects.SysDashboardElems;
+import ru.vasyukov.pageObjects.SysDashboardElems;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.*;

@@ -1,4 +1,4 @@
-package ru.vasyukov.Custom;
+package ru.vasyukov.custom;
 
 import org.openqa.selenium.Keys;
 

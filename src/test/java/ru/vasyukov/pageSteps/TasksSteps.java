@@ -1,8 +1,8 @@
-package ru.vasyukov.PageSteps;
+package ru.vasyukov.pageSteps;
 
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
-import ru.vasyukov.PageObjects.TasksElems;
+import ru.vasyukov.pageObjects.TasksElems;
 
 import static com.codeborne.selenide.Condition.*;
 

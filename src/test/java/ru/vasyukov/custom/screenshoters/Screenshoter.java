@@ -1,4 +1,4 @@
-package ru.vasyukov.Custom;
+package ru.vasyukov.custom.screenshoters;
 
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;

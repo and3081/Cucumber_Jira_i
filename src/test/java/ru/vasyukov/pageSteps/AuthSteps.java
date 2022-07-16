@@ -1,7 +1,7 @@
-package ru.vasyukov.PageSteps;
+package ru.vasyukov.pageSteps;
 
-import ru.vasyukov.PageObjects.AuthElems;
-import ru.vasyukov.Custom.Properties.TestData;
+import ru.vasyukov.pageObjects.AuthElems;
+import ru.vasyukov.custom.properties.TestData;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.*;
@@ -21,12 +21,12 @@ public class AuthSteps extends AuthElems {
 
     @Step("Ввод login на странице авторизации")
     public static void inputAuthLogin() {
-        fieldLogin.shouldBe(exist, visible, enabled).setValue(TestData.props.loginJira());  //System.getenv()
+        fieldLogin.shouldBe(exist, visible, enabled).setValue(TestData.application.loginJira());  //System.getenv()
     }
 
     @Step("Ввод пароля на странице авторизации")
     public static void inputAuthPsw() {
-        fieldPsw.shouldBe(exist, visible, enabled).setValue(TestData.props.passwordJira());
+        fieldPsw.shouldBe(exist, visible, enabled).setValue(TestData.application.passwordJira());
     }
 
     @Step("Нажатие кнопки Вход")

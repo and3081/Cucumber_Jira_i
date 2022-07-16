@@ -1,4 +1,4 @@
-package ru.vasyukov.Custom;
+package ru.vasyukov.custom;
 
 import com.codeborne.selenide.SelenideElement;
 

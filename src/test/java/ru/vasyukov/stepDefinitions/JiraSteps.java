@@ -1,11 +1,11 @@
-package ru.vasyukov.StepDefinitions;
+package ru.vasyukov.stepDefinitions;
 
 import io.cucumber.java.ru.*;
-import ru.vasyukov.PageSteps.*;
+import ru.vasyukov.pageSteps.*;
 
 import java.util.List;
 
-import static ru.vasyukov.PageObjects.BaseElems.clickSideBarTaskListButton;
+import static ru.vasyukov.pageObjects.BaseElems.clickSideBarTaskListButton;
 
 public class JiraSteps {
     @Когда("^Авторизуемся")

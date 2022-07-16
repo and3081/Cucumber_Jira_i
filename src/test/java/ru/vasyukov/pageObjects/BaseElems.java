@@ -1,4 +1,4 @@
-package ru.vasyukov.PageObjects;
+package ru.vasyukov.pageObjects;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
